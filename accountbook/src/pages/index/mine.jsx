@@ -1,5 +1,5 @@
 import React from 'react';
-export default class mine extends React.Component{
+export default class Mine extends React.Component{
 
     render() {
         // let {list} = this.props;

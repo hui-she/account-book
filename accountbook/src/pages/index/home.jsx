@@ -1,5 +1,5 @@
 import React from 'react';
-export default class home extends React.Component{
+export default class Home extends React.Component{
 
     render() {
         // let {list} = this.props;

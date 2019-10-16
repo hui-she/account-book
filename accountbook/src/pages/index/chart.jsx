@@ -1,5 +1,5 @@
 import React from 'react';
-export default class chart extends React.Component{
+export default class Chart extends React.Component{
 
     render() {
         // let {list} = this.props;

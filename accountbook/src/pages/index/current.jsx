@@ -1,5 +1,5 @@
 import React from 'react';
-export default class current extends React.Component{
+export default class Current extends React.Component{
 
     render() {
         // let {list} = this.props;
