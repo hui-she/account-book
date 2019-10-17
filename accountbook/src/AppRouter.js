@@ -10,6 +10,7 @@ import Mine from './pages/index/mine'
 import Footer from 'components/footer'
 import './index.css';
 import './styles/reset.css';
+import './styles/iconfont.css';
 
 function AppRouter() {
     return (
@@ -19,9 +20,9 @@ function AppRouter() {
             {/* <Redirect from="/" to="/HomeIndex" /> */}
             <Switch>
                 {/* <Redirect from="/" to="/HomeIndex" />  */}
-                <Route path="/Home" render={ ()=>
+                <Route path="/" render={ ()=>
                     <Index>
-                        <Route exact path='/home' component={Home}/>
+                        <Route exact path='/' component={Home}/>
                         <Route path='/home/account' component={Account}/>
                         <Route path='/home/current' component={Current}/>
                         <Route path='/home/chart' component={Chart}/>

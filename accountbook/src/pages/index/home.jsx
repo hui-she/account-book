@@ -10,6 +10,7 @@ export default class Home extends React.Component{
                         return <p key={it.name}>{it.name}你好</p>
                     }): */}
                     <p>账户</p>
+                    <i className="iconfont iconwode"></i>
                 {/* } */}
             </div>
         )
