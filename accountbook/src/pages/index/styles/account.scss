@@ -1,0 +1,125 @@
+.acc-box{
+    width: 100%;
+    .acc-top{
+        width: 100%;
+        height: 450px;
+        background-image: url("../images/bg.jpg");
+        background-size: 100%;
+        color: rgba(256,256,256,0.5);
+        padding-top: 210px;
+        padding-left: 40px;
+    }
+    .tip-box{
+        .tip-t{
+            margin-bottom: 24px;
+            .month{
+                font-size: 42px;
+                color: #FFD485;
+                margin-right: 10px;
+            }
+        }
+        .tip-c{
+            margin-bottom: 36px;
+            .total-expend{
+                font-size: 70px;
+                line-height: 70px;
+                color: #ffffff;
+                margin-right: 28px;
+                vertical-align: middle;
+            }
+            .iconyanjing{
+                font-size: 40px;
+                vertical-align: middle;
+            }
+        }
+        .tip-b{
+            display: flex;
+            .label{
+                margin-right: 16px;
+            }
+            .budget-box{
+                padding-right: 36px;
+                border-right: 1px solid rgba(256,256,256,0.5);
+            }
+            .income-box{
+                padding-left: 36px;
+            }
+            .setting-btn,.total-income{
+                color: #ffffff;
+            }
+        }
+    }
+
+    .acc-list{
+        display: flex;
+        flex-direction: column;
+        li{
+            width: 100%;
+            border-bottom: 1px solid #F5F5F5;
+            a{
+                width: 100%;
+                height: 150px;
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                padding: 0 40px;
+                .iconfont{
+                    font-size: 40px;
+                    line-height: 150px;
+                }
+                .item-l{
+                    display: flex;
+                    align-content: center;
+                    .time-box{
+                        margin-left: 32px;
+                        .time-name{
+                            font-size: 32px;
+                            color: #1A1915;
+                            margin-top: 40px;
+                            margin-bottom: 16px;
+                        }
+                        .time-tip{
+                            font-size: 24px;
+                            color: #666666;
+                        }
+                    }
+                }
+                .item-r{
+                    display: flex;
+                    align-content: center;
+                    .price-box{
+                        margin-right: 12px;
+                        .expend-num{
+                            color: #EA462B;
+                            margin-top: 40px;
+                            margin-bottom: 10px;
+                        }
+                        .income-num{
+                            color: #0EB281;
+                        }
+                    }
+                }
+            }
+            &:nth-child(1){
+                a .label-icon{
+                    color: #FEA489;
+                }
+            }
+            &:nth-child(2){
+                a .label-icon{
+                    color: #72A6FA;
+                }
+            }
+            &:nth-child(3){
+                a .label-icon{
+                    color: #FDAF00;
+                }
+            }
+            &:nth-child(4){
+                a .label-icon{
+                    color: #F36685;
+                }
+            }
+        }
+    }
+}

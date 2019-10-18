@@ -22,7 +22,7 @@ function AppRouter() {
                 {/* <Redirect from="/" to="/HomeIndex" />  */}
                 <Route path="/" render={ ()=>
                     <Index>
-                        <Route exact path='/' component={Home}/>
+                        <Route exact path='/' component={Account}/>
                         <Route path='/home/account' component={Account}/>
                         <Route path='/home/current' component={Current}/>
                         <Route path='/home/chart' component={Chart}/>

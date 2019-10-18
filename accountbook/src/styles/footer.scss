@@ -18,6 +18,7 @@
             flex-direction: column;
             justify-content: center;
             a{
+                width: 80px;
                 color: #333333;
                 font-size: 14px;
                 text-align: center;
@@ -30,7 +31,7 @@
                     font-size: 22px;  
                 }
                 &.active{
-                    color: #FF3119;
+                    color: #0AA4D7;
                 }
             }
             .add-btn{
