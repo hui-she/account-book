@@ -22,9 +22,9 @@ export default class Footer extends React.Component{
                         </NavLink>
                     </li>
                     <li>
-                        <div className="add-btn">
+                        <NavLink to="/add" className="add-btn">
                             记一笔
-                        </div>
+                        </NavLink>
                     </li>
                     <li>
                         <NavLink to="/home/chart" activeClassName="active">

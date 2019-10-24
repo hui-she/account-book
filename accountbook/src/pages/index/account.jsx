@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/account.scss'
-import {getAppointTime} from 'appSrc/js/util.js'
+import {getAppointTime} from '@/js/util.js'
 export default class Account extends React.Component{
 
     constructor() {

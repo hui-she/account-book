@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Route, Link , Switch, Redirect, IndexRoute } f
 import Index from './pages/index/index'
 import Home from './pages/index/home'
 import Account from './pages/index/account'
-import Current from './pages/index/current'
-import Chart from './pages/index/chart'
-import Mine from './pages/index/mine'
+import Current from './pages/current/current'
+import Chart from './pages/chart/chart'
+import Mine from './pages/mine/mine'
+import AddCharge from './pages/add/addCharge'
 import Footer from 'components/footer'
 import './index.css';
 import './styles/reset.css';
@@ -19,10 +20,10 @@ function AppRouter() {
         <Router>
             {/* <Redirect from="/" to="/HomeIndex" /> */}
             <Switch>
-                {/* <Redirect from="/" to="/HomeIndex" />  */}
-                <Route path="/" render={ ()=>
+                
+                <Route path="/home" render={ ()=>
                     <Index>
-                        <Route exact path='/' component={Account}/>
+                        {/* <Route path='/' component={Account}/> */}
                         <Route path='/home/account' component={Account}/>
                         <Route path='/home/current' component={Current}/>
                         <Route path='/home/chart' component={Chart}/>
@@ -30,8 +31,9 @@ function AppRouter() {
                     </Index>
                 }/>
                 
-                <Route path='/list' component={Account}/>
+                <Route path='/add' component={AddCharge}/>
                 {/* <Route path='*' component={Current}/> */}
+                <Redirect from="/" to="/home/account" /> 
             </Switch>
             
         </Router>
